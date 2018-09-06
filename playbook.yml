@@ -1,0 +1,11 @@
+- hosts: wordpress
+  connection: local
+  remote_user: gustavoa
+
+  become: yes
+
+  roles:
+  - server
+  - php
+  - mysql
+  - wordpress
